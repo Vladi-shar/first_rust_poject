@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'first_rust_poject'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=first_rust_poject",
+                    "--package=first_rust_poject"
+                ],
+                "filter": {
+                    "name": "first_rust_poject",
+                    "kind": "bin"
+                }
+            },
+            "args": ["C:\\Users\\palam\\source\\repos\\Vladi_nject\\x64\\Release\\payload.dll", "3896"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'first_rust_poject'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=first_rust_poject",
+                    "--package=first_rust_poject"
+                ],
+                "filter": {
+                    "name": "first_rust_poject",
+                    "kind": "bin"
+                }
+            },
+            "args": ["C:\\Users\\palam\\source\\repos\\Vladi_nject\\x64\\Release\\payload.dll", "9732"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
