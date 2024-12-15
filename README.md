@@ -1,5 +1,5 @@
 # vladinject - dll injector written in rust
-supports injection to both native x64 and wow64 processes
+supports injection to both native x64 and wow64 processes.<br>
 gui written using egui
 
 ![Inject Running](images/running.png)
